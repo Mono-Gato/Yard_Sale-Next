@@ -1,0 +1,10 @@
+{
+    "compilersOptions":{
+        "baseUrl": "src",
+        "paths":{
+            "@pages": [
+                "pages/"
+            ]
+        }
+    }
+}
