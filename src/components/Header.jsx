@@ -9,6 +9,7 @@ import iconShoppingCart from '@icons/icon_shopping_cart.svg';
 import { AppContext } from '@context/AppContext';
 import { ShoppingCart } from '@containers/ShoppingCart';
 import Link from 'next/link';
+import Img from 'next/future/image';
 
 function Header() {
   const { state } = useContext(AppContext);
@@ -23,7 +24,7 @@ function Header() {
   return (
     <React.Fragment>
       <nav className={styles.navbar}>
-        <img onClick={handleToggleMenu} src={iconMenu.src} className={styles['navbar__menu-icon']} alt="menu" role="presentation"/>
+        <Img onClick={handleToggleMenu} src={iconMenu.src} className={styles['navbar__menu-icon']} alt="menu" width={25} height={28} />
         <div className={styles['navbar-left']}>
           <Link href="/">
             <Image className={styles.navbar__logo} src={logo} alt="logo" />
@@ -53,7 +54,7 @@ function Header() {
           <ul>
             <li onClick={handleToggleMenu} className={styles.navbar__email} role="presentation">
               camilayokoo@gmail.com
-              <img src={iconArrow.src} alt="icon-arrow" />
+              <Img src={iconArrow.src} alt="icon-arrow" width={5} height={9} />
             </li>
             <li className={styles.navbar__cart} onClick={handleToggleCart} role="presentation">
               <Image src={iconShoppingCart} alt="cart" />
