@@ -4,7 +4,7 @@ import { ProductItem } from '@components/ProductItem';
 import styles from '@styles/ProductList.module.scss';
 import { useGetProducts } from '@hooks/useGetProducts';
 
-const urlAPI = 'http://api.escuelajs.co/api/v1/products';
+const urlAPI = 'https://api.escuelajs.co/api/v1/products';
 
 function ProductList() {
   const products = useGetProducts(urlAPI);
