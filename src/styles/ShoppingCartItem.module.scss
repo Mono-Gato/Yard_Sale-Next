@@ -1,0 +1,35 @@
+@import './vars';
+
+.ShoppingCart__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  div {
+    display: flex;
+    align-items: center;
+    &:nth-child(1) p {
+      font-size: $sm;
+      color: $dark;
+    }
+    &:nth-child(2) {
+      p {
+        font-size: $md;
+        font-weight: bold;
+        color: $black;
+        margin-right: 16px;
+        width: max-content;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  img:nth-child(1) {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-right: 16px;
+  }
+}

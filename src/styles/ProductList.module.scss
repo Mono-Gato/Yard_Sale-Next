@@ -1,0 +1,18 @@
+/*home page*/
+.main__container {
+  padding: 24px;
+  padding-top: 84px;
+}
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 140px);
+  gap: 16px;
+  place-content: center;
+}
+
+@media (min-width: 640px) {
+  .cards__container {
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 24px;
+  }
+}

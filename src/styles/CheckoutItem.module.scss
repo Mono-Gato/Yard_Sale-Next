@@ -1,0 +1,32 @@
+@import './vars';
+
+.checkout__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  div {
+    display: flex;
+    align-items: center;
+  }
+  figure {
+    margin: 0 16px 0 0;
+    img {
+      width: 68px;
+      height: 68px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+  div p {
+    color: $very-light-pink;
+    font-size: $sm;
+  }
+  p.price {
+    margin-right: 24px;
+  }
+  .price {
+    font-size: $md;
+    font-weight: 700;
+  }
+}

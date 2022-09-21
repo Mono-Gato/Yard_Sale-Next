@@ -1,0 +1,58 @@
+@import './vars';
+
+/*my order*/
+
+.checkout {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  .title {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  &__container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__resume {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: $text-input-field;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    p {
+      &:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      &:nth-child(2) {
+        text-align: end;
+      }
+      span {
+        &:nth-child(1) {
+          font-size: $md;
+          font-weight: 700;
+        }
+        &:nth-child(2) {
+          font-size: $sm;
+          margin-top: 4px;
+          color: $very-light-pink;
+        }
+      }
+    }
+    .price {
+      font-size: $md;
+      font-weight: 700;
+    }
+  }
+}
